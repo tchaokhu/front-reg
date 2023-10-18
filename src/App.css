@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 .App {
   text-align: center;
 }
@@ -35,4 +40,310 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  background-color:#1B4B67;
+  color: #fff;
+  margin-top: 2%;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+.container2{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container3{
+  display:flex;
+  justify-content:flex-start;
+  align-items: flex-start;
+}
+
+.underline {
+ 
+  text-decoration: underline;
+  cursor: pointer;
+}
+.no-underline {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+
+.cursors{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.bg{
+  background-color:#1B4B67;
+
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+#passwordHelpBlock{
+  color: red;
+}
+
+#custom-button{
+  /* background-color: #ffe86f;
+  border-color: #ffe86f; */
+  color: #1B4B67;
+  font-weight: bold;
+  text-align: center;
+}
+
+.form-control-example {
+  font-size: 18px;
+  width: 400px;
+  box-shadow: 0px 2px 4px rgb(176, 176, 176);
+}
+
+
+/* ใช้ media queries เพื่อปรับขนาดของข้อมูลในกรณีขนาดหน้าจอเล็กกว่า 768px */
+@media (max-width: 768px) {
+  .form-control-example {
+    width: 100%; /* ทำให้ข้อมูลเต็มความกว้างของหน้าจอ */
+    max-width: 400px; /* จำกัดความกว้างของข้อมูล */
+  }
+}
+
+#white-button{
+  background-color: #ffffff;
+  border-color: #ffffff;
+  color: #1B4B67;
+  font-weight: bold;
+}
+
+/* Register */
+.register-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin-top: 15vh;
+}
+
+.regis-main-form {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+}
+
+#custom-button-register {
+  margin-top: 5vh;
+  color: #1B4B67;
+  font-weight: bold;
+  border-radius: 15px;
+  width:20vh;
+}
+
+.chang-main-form-h2-register {
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  margin: 5vh 0;
+}
+
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .register-main {
+    margin-top: 10vh;
+  }
+
+  .regis-main-form {
+    height: 80px;
+  }
+
+  #custom-button-register {
+    margin-top: 3vh;
+    border-radius: 50px;
+  }
+
+  .chang-main-form-h2-register {
+    height: 80px;
+    margin: 3vh 0;
+  }
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+  .register-main {
+    margin-top: 5vh;
+  }
+
+  .regis-main-form {
+    height: 60px;
+  }
+
+  #custom-button-register {
+    margin-top: 2vh;
+  }
+
+  .chang-main-form-h2-register {
+    height: 60px;
+    margin: 2vh 0;
+  }
+}
+
+
+/* ResetPassword */
+.change-main{
+  display: flex;
+  width: 100%;
+  height:100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.chang-main-form{
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+}
+
+
+.chang-main-form-h2{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* ปรับความกว้างของ rows ให้เต็มหน้าจอ */
+  height: 100px; /* กำหนดความสูงของ rows ตามต้องการ */
+  margin: 10px 0; /* เพิ่มขอบด้านบนและด้านล่างของ rows */
+}
+
+
+.form-container {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control-example {
+  width: 100%;
+}
+
+.custom-text {
+  font-size: 14px;
+
+}
+
+h2 {
+  font-weight: bold;
+}
+
+
+
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+HomeConfig Box Button {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
